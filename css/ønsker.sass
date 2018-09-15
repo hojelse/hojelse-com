@@ -1,0 +1,60 @@
+$button: #aec6cf
+$list: #eee
+
+body
+    margin: 0
+    padding: 0
+    font-family: arial
+
+.wrapper
+    width: 90vw
+    max-width: 700px
+    position: relative
+    left: 50%
+    transform: translate(-50%,0)
+    padding-top: 30px
+
+.header
+    display: inline-block
+
+h1
+    color: #666
+
+.list
+    min-height: 40px
+    position: relative
+    background-color: $list
+    &:nth-child(even)
+        background-color: lighten($list, 3%)
+    &:last-child
+        min-height: 30px
+
+p
+    display: inline-block
+    margin-left: 20px
+    color: #666
+
+p:nth-child(2)
+        color: $button
+        font-weight: bold
+        font-size: smaller
+
+a
+    right: 0px
+    position: absolute
+    height: 100%
+    min-width: 60px
+
+button
+    background-color: $button
+    font-size: 10pt
+    border: none
+    color: white
+    text-decoration: none
+    height: 100%
+    width: 100%
+    padding: 0px 15px
+    &:hover
+        background-color: darken($button,10%)
+    &:focus
+        outline: 0
