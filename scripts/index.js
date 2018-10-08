@@ -155,3 +155,21 @@ function mediaPost_7() {
     $(mediaPostLogo_7).removeClass('mediaPostLogo-on');
   });
 };
+
+function mediaPost_8() {
+  var animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
+  var mediaPost_8 = document.getElementById("mediaPost_8");
+  var mediaPostLogo_8 = document.getElementById("mediaPostLogo_8");
+  var mediaPostTitle_8 = document.getElementById("mediaPostTitle_8");
+
+  $(mediaPost_8).addClass("mediaPost-on");
+  $(mediaPostTitle_8).addClass("mediaPostTitle-on");
+  $(mediaPostLogo_8).addClass("mediaPostLogo-on");
+
+  $(mediaPostLogo_8).one(animationEvent, function(event) {
+    $(mediaPost_8).removeClass('mediaPost-on');
+    $(mediaPostTitle_8).removeClass('mediaPostTitle-on');
+    $(mediaPostLogo_8).removeClass('mediaPostLogo-on');
+  });
+};
+
