@@ -16,6 +16,7 @@ body
     padding-bottom: 10vh
 
 .header
+    text-align: center
     display: flex
     justify-content: center
     align-items: center
@@ -39,7 +40,7 @@ button
     border: none
     color: white
     text-decoration: none
-    height: 40px
+    height: 50px
     padding: 0px 15px
     transition: 0.2s
     &:hover
@@ -50,13 +51,13 @@ button
 .list
     display: flex
     align-items: center
+    flex-wrap: wrap
     border-radius: 40px
     margin-bottom: 15px
-    height: 40px
-    position: relative
+    min-height: 40px
     background-color: $list
     &:nth-child(even)
-        background-color: lighten($list, 1%)
+        background-color: lighten($list, 2%)
 
 p
     display: inline-block
@@ -65,12 +66,10 @@ p
     font-weight: bold
 
 p:nth-child(2)
-        color: $button
-        
-        font-size: smaller
+    flex-grow: 1
+    color: $button
+    font-size: smaller
 
 a
-    right: 0px
-    position: absolute
     height: 100%
-    min-width: 60px
+    min-width: 50px
