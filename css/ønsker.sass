@@ -1,5 +1,5 @@
-$button: #aec6cf
-$list: #eee
+$button: #666
+$list: #f3f3f3
 
 body
     margin: 0
@@ -8,35 +8,65 @@ body
 
 .wrapper
     width: 90vw
-    max-width: 700px
+    max-width: 600px
     position: relative
     left: 50%
     transform: translate(-50%,0)
-    padding-top: 30px
+    padding-top: 10vh
+    padding-bottom: 10vh
 
 .header
-    display: inline-block
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin-bottom: 80px
+
+svg
+    height: 40px
+    margin-left: 30px
+    fill: #FF7269
 
 h1
-    color: #666
+    color: $button
+    display: inline-block
+
+button
+    background-color: $button
+    display: inline-block
+    border-radius: 40px
+    font-size: 10pt
+    border: none
+    color: white
+    text-decoration: none
+    height: 40px
+    padding: 0px 15px
+    transition: 0.2s
+    &:hover
+        background-color: darken($button, 10%)
+    &:focus
+        outline: 0
 
 .list
-    min-height: 40px
+    display: flex
+    align-items: center
+    border-radius: 40px
+    margin-bottom: 15px
+    height: 40px
     position: relative
     background-color: $list
     &:nth-child(even)
-        background-color: lighten($list, 3%)
-    &:last-child
-        min-height: 30px
+        background-color: lighten($list, 1%)
 
 p
     display: inline-block
     margin-left: 20px
-    color: #666
+    color: $button
+    font-weight: bold
 
 p:nth-child(2)
         color: $button
-        font-weight: bold
+        
         font-size: smaller
 
 a
@@ -44,17 +74,3 @@ a
     position: absolute
     height: 100%
     min-width: 60px
-
-button
-    background-color: $button
-    font-size: 10pt
-    border: none
-    color: white
-    text-decoration: none
-    height: 100%
-    width: 100%
-    padding: 0px 15px
-    &:hover
-        background-color: darken($button,10%)
-    &:focus
-        outline: 0

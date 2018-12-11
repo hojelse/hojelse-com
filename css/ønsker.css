@@ -6,45 +6,92 @@ body {
 
 .wrapper {
   width: 90vw;
-  max-width: 700px;
+  max-width: 600px;
   position: relative;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  padding-top: 30px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .header {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 80px;
+}
+
+svg {
+  height: 40px;
+  margin-left: 30px;
+  fill: #FF7269;
 }
 
 h1 {
   color: #666;
+  display: inline-block;
+}
+
+button {
+  background-color: #666;
+  display: inline-block;
+  border-radius: 40px;
+  font-size: 10pt;
+  border: none;
+  color: white;
+  text-decoration: none;
+  height: 40px;
+  padding: 0px 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #4d4d4d;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .list {
-  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  margin-bottom: 15px;
+  height: 40px;
   position: relative;
-  background-color: #eee;
+  background-color: #f3f3f3;
 }
 
 .list:nth-child(even) {
   background-color: #f6f6f6;
 }
 
-.list:last-child {
-  min-height: 30px;
-}
-
 p {
   display: inline-block;
   margin-left: 20px;
   color: #666;
+  font-weight: bold;
 }
 
 p:nth-child(2) {
-  color: #aec6cf;
-  font-weight: bold;
+  color: #666;
   font-size: smaller;
 }
 
@@ -53,24 +100,5 @@ a {
   position: absolute;
   height: 100%;
   min-width: 60px;
-}
-
-button {
-  background-color: #aec6cf;
-  font-size: 10pt;
-  border: none;
-  color: white;
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
-  padding: 0px 15px;
-}
-
-button:hover {
-  background-color: #8eafbc;
-}
-
-button:focus {
-  outline: 0;
 }
 /*# sourceMappingURL=ønsker.css.map */
