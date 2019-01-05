@@ -25,6 +25,14 @@ function airplane() {
   });
 };
 
+
+function mediaPost() {
+  var a = document.getElementById("a");
+  $(a).addClass("display");
+};
+
+
+/*
 function mediaPost() {
   var animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
   var mediaPost = document.getElementById("mediaPost");
@@ -172,4 +180,4 @@ function mediaPost_8() {
     $(mediaPostLogo_8).removeClass('mediaPostLogo-on');
   });
 };
-
+*/

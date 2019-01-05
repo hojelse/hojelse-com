@@ -170,7 +170,6 @@ h1 {
 
 .mediaContainer {
   width: 100%;
-  height: 1200px;
   padding-top: 200px;
   position: relative;
 }
@@ -178,13 +177,25 @@ h1 {
 .rowCols {
   width: 900px;
   margin: auto;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mediaCol {
-  width: calc(80%/3);
-  margin: 0 calc(20%/6);
-  float: left;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mediaLogo {
@@ -228,7 +239,7 @@ h1 {
 }
 
 .mediaPost {
-  width: 100%;
+  width: 250px;
   margin: auto;
   background-color: #fff;
   border-radius: 10px;
@@ -236,8 +247,6 @@ h1 {
           box-shadow: 4px 4px 10px 0px #ddd;
   margin: 20px 0;
   position: relative;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 
 .mediaPostImg {
@@ -248,52 +257,60 @@ h1 {
 .mediaPostWrap {
   width: 100%;
   height: 40px;
+  margin-top: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mediaPostWrapLogo {
   color: #777777;
   font-size: 20px;
-  float: right;
   margin: 0px 20px;
-  top: 50%;
-  position: relative;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
 }
 
 .mediaPostWrapBtn1 {
   color: #777777;
   font-size: 20px;
-  float: left;
   margin: 0px 20px;
-  top: 50%;
-  position: relative;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
 }
 
 .mediaPostWrapBtn2 {
   color: #777777;
   font-size: 20px;
-  float: left;
-  margin: 0;
-  top: 50%;
-  position: relative;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
 }
 
 .mediaPostTitle {
   font-size: 12px;
   font-weight: 700;
   color: #777777;
-  float: left;
-  margin: 0;
-  margin-left: 20px;
-  top: 50%;
-  position: relative;
-  -webkit-transform: translate(0, -60%);
-          transform: translate(0, -60%);
+  margin: 0px 20px;
+}
+
+.mediaPostWrapSpacer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.abstract {
+  width: calc(100% - 40px);
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.abstract p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.display {
+  display: block;
+  max-height: 100px;
 }
 
 h3 {
