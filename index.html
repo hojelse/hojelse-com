@@ -14,8 +14,6 @@
   <meta property="og:image:width" content="1024" />
   <meta property="og:image:height" content="1024" />
 
-  <script src="scripts/index.js"></script>
-
   <!-- jQuery Library-->
 	<script src="scripts/jquery-3.2.1.js">
 	</script>
@@ -73,7 +71,6 @@
 	<div class="container" style="overflow-x: hidden;">
 		<section class="headerContainer">
 			<div class="header">
-				<p class="hojelse">højelse</p>
         <div class="leftColumn">
           <img class="pb" src="images/pb%20sq.png">
         </div>
@@ -84,7 +81,7 @@
           </div>
 				</div>
       </div>
-      <a href="#" onclick="scrolldown()" class="scroll-down" address="true">
+      <a onclick="scrolldown()" class="scroll-down" address="true">
         <svg class="headerArrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve"> <g> <g> <polygon points="796.7,500 688.7,608 664,583.3 729.8,517.5 220,517.5 220,482.5 729.8,482.5 664,416.7 688.7,392 "/> </g> </g> </svg>
       </a>
     </section>
@@ -110,6 +107,17 @@
                 <p>As a part of a website design for cabinet maker, <i>Lamps by Keldebaek</i>, I did product photography</p>
               </div>
             </div>
+            <div class="mediaPost">
+                <img class="mediaPostImg" src="images/skisAndMountains.png">
+                <div class="mediaPostWrap">
+                  <p class="mediaPostTitle">SKIS AND MOUNTAINS</p>
+                  <div class="mediaPostWrapSpacer"></div>
+                  <i class="fab fa-instagram mediaPostWrapLogo"></i>
+                </div>
+                <div class="abstract">
+                  <p>This is kinda just a placeholder, until I get more photo gigs, but I do love skiing!</p>
+                </div>
+              </div>
             <a href="https://www.instagram.com/kristofferhojelse" target="_blank">
               <p class="mediaCTA">MORE INSTAGRAM</p>
             </a>
@@ -169,8 +177,20 @@
                </div>
               </a>
             </div>
-            <div class="mediaPost" id="mediaPost" onmouseover="mediaPost()">
-              <img class="mediaPostImg" src="images/nightmode.gif">
+            <div class="mediaPost" id="mediaPost">
+              <div class="beacon unselectable"><p class="new">NEW</p></div>
+              <img class="mediaPostImg" src="images/calculator.PNG">
+              <div class="mediaPostWrap">
+                <p class="mediaPostTitle">CODING A CALCULATOR</p>
+                <div class="mediaPostWrapSpacer"></div>
+                <i class="fab fa-codepen mediaPostWrapLogo"></i>
+              </div>
+              <div class="abstract" id="a">
+                <p>Learning basic javascript by designing a calculator</p>
+              </div>
+            </div>
+            <div class="mediaPost" id="mediaPost">
+              <img class="mediaPostImg" src="images/nightmode.png">
               <div class="mediaPostWrap">
                 <p class="mediaPostTitle">NIGHTMODE TOGGLE</p>
                 <div class="mediaPostWrapSpacer"></div>
@@ -206,9 +226,13 @@
             <p class="footerEmail unselectable">info@hojelse.com</p>
           </a>
           <div class="airplanePulse" id="airplanePulse"></div>
+          <svg class="footerArrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve"> <g> <g> <polygon points="665.8,381.3 557.8,489.3 533.2,464.6 599,398.8 404.2,398.8 404.2,788.8 369.2,788.8 369.2,363.8 599,363.8 533.2,298 557.8,273.3 "/> </g> </g> </svg>
+          <p class="footerTryme" id="tryme">MAIL ME!</p>
+          <p class="footerTryme" id="trymeLoad">LAUNCHING EMAIL KLIENT ...</p>
         </div>
       </div>
     </section>
-	</div>
+  </div>
+  <script src="scripts/index.js"></script>
 </body>
 </html>

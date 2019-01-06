@@ -10,27 +10,73 @@ function airplane() {
   var airplane = document.getElementById("airplane");
   var airplaneContainer = document.getElementById("airplaneContainer");
   var airplanePulse = document.getElementById("airplanePulse");
+  var tryme = document.getElementById("tryme");
+  var trymeLoad = document.getElementById("trymeLoad");
+  var footerArrowArray = document.getElementsByClassName("footerArrow");
+  var footerArrow = footerArrowArray[0];
 
   $(airplane).addClass("airplane-on");
+  $(tryme).addClass("tryme-in");
+  $(trymeLoad).addClass("trymeLoad-in");
+  $(footerArrow).addClass("footerArrow-in");
 
   $(airplaneContainer).addClass("airplaneContainer-on");
   $(airplaneContainer).one(animationEvent, function(event) {
     $(airplanePulse).addClass("airplanePulse-on");
+
+    $(tryme).removeClass("tryme-in");
+    $(tryme).addClass("tryme-out");
+    $(trymeLoad).removeClass("trymeLoad-in");
+    $(trymeLoad).addClass("trymeLoad-out");
+    $(footerArrow).removeClass("footerArrow-in");
+    $(footerArrow).addClass("footerArrow-out");
   });
 
   $(airplanePulse).one(animationEvent, function(event) {
-    $(airplanePulse).removeClass('airplanePulse-on')
-    $(airplaneContainer).removeClass('airplaneContainer-on')
-    $(airplane).removeClass('airplane-on')
+    $(airplanePulse).removeClass('airplanePulse-on');
+    $(airplaneContainer).removeClass('airplaneContainer-on');
+    $(airplane).removeClass('airplane-on');
+
+    $(tryme).removeClass("tryme-out");
+    $(trymeLoad).removeClass("trymeLoad-out");
+    $(footerArrow).removeClass("footerArrow-out");
   });
 };
 
-
-function mediaPost() {
-  var a = document.getElementById("a");
-  $(a).addClass("display");
+var tryme = document.getElementById("tryme");
+tryme.onclick = function(){
+  $(tryme).addClass("tryme-on");
 };
 
+var mediaPost = document.getElementsByClassName("mediaPost");
+
+mediaPost[0].onclick = function(){
+  window.open('https://www.instagram.com/kristofferhojelse', '_blank');
+};
+
+mediaPost[1].onclick = function(){
+  window.open('https://www.instagram.com/kristofferhojelse/', '_blank');
+};
+
+mediaPost[2].onclick = function(){
+  window.open('https://www.behance.net/gallery/65214775/PHOTO-HOUSE-Visual-identity', '_blank');
+};
+
+mediaPost[3].onclick = function(){
+  window.open('https://www.behance.net/gallery/37098399/To-My-Green-Lands-Vinyl-record', '_blank');
+};
+
+mediaPost[4].onclick = function(){
+  window.open('https://www.behance.net/gallery/22889813/MEOWL-Mices-worst-nightmare', '_blank');
+};
+
+mediaPost[5].onclick = function(){
+  window.open('https://codepen.io/hojelse/pen/WagPPp', '_blank');
+};
+
+mediaPost[6].onclick = function(){
+  window.open('https://codepen.io/hojelse/pen/VEKOmW?editors=0100', '_blank');
+};
 
 /*
 function mediaPost() {
