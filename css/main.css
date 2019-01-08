@@ -1074,5 +1074,11 @@ a {
     opacity: 1;
     font-size: 10px;
   }
+  .footerArrow {
+    display: none;
+  }
+  .footerTryme {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
