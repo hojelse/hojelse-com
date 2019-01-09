@@ -3,7 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+  <meta name="description" content="Kristoffer wants to make things for friendly people">
+  <meta name="author" content="Kristoffer Højelse">
+
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<title>Kristoffer Højelse</title>
   <link href="images/iconBlue.ico" rel="shortcut icon" type="image/x-icon">
@@ -66,8 +69,19 @@
       })
     })
   </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128632490-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128632490-1');
+  </script>
+
 </head>
-<body>  
+<body>
 	<div class="container" style="overflow-x: hidden;">
 		<section class="headerContainer">
 			<div class="header">
@@ -97,7 +111,7 @@
               </a>
             </div>
             <div class="mediaPost">
-              <img class="mediaPostImg" src="images/pagoda_box.jpg">
+              <img class="mediaPostImg" src="images/pagoda_box.jpg" name="product photography">
               <div class="mediaPostWrap">
                 <p class="mediaPostTitle">PRODUCT PHOTOGRAPHY</p>
                 <div class="mediaPostWrapSpacer"></div>
@@ -108,7 +122,7 @@
               </div>
             </div>
             <div class="mediaPost">
-                <img class="mediaPostImg" src="images/skisAndMountains.png">
+                <img class="mediaPostImg" src="images/skisAndMountains.png" name="Skis and mountains">
                 <div class="mediaPostWrap">
                   <p class="mediaPostTitle">SKIS AND MOUNTAINS</p>
                   <div class="mediaPostWrapSpacer"></div>
@@ -132,7 +146,7 @@
               </a>
             </div>
             <div class="mediaPost">
-              <img class="mediaPostImg" src="images/fotohusetvirum.png">
+              <img class="mediaPostImg" src="images/fotohusetvirum.png" name="Fotohuset Virum Logo">
               <div class="mediaPostWrap">
                 <p class="mediaPostTitle">LOGO DESIGN</p>
                 <div class="mediaPostWrapSpacer"></div>
@@ -143,7 +157,7 @@
               </div>
             </div>
             <div class="mediaPost">
-              <img class="mediaPostImg" src="images/tmgl.jpg">
+              <img class="mediaPostImg" src="images/tmgl.jpg" name="To My Green Lands vinyl record">
               <div class="mediaPostWrap">
                 <p class="mediaPostTitle">VINYL COVER</p>
                 <div class="mediaPostWrapSpacer"></div>
@@ -154,7 +168,7 @@
               </div>
             </div>
             <div class="mediaPost">
-              <img class="mediaPostImg" src="images/meowl.jpg">
+              <img class="mediaPostImg" src="images/meowl.jpg" name="Meowl">
               <div class="mediaPostWrap">
                 <p class="mediaPostTitle">MEOWL</p>
                 <div class="mediaPostWrapSpacer"></div>
@@ -179,7 +193,7 @@
             </div>
             <div class="mediaPost" id="mediaPost">
               <div class="beacon unselectable"><p class="new">NEW</p></div>
-              <img class="mediaPostImg" src="images/calculator.PNG">
+              <img class="mediaPostImg" src="images/calculator.PNG" name="Javascript calculator">
               <div class="mediaPostWrap">
                 <p class="mediaPostTitle">CODING A CALCULATOR</p>
                 <div class="mediaPostWrapSpacer"></div>
@@ -190,7 +204,7 @@
               </div>
             </div>
             <div class="mediaPost" id="mediaPost">
-              <img class="mediaPostImg" src="images/nightmode.png">
+              <img class="mediaPostImg" src="images/nightmode.png" name="Nightmode toggle button">
               <div class="mediaPostWrap">
                 <p class="mediaPostTitle">NIGHTMODE TOGGLE</p>
                 <div class="mediaPostWrapSpacer"></div>
@@ -210,22 +224,20 @@
       <div class="footerContainer">
         <div class="someCol">
           <div class="someContainer">
-              <a href="https://codepen.io/hojelse" target="_blank"><i class="some fab fa-codepen"></i></a>
-              <a href="https://www.instagram.com/kristofferhojelse" target="_blank"><i class="some fab fa-instagram"></i></a>
-              <a href="https://www.behance.net/hojelse" target="_blank"><i class="some fab fa-behance"></i></a>
-              <a href="https://www.github.com/hojelse" target="_blank"><i class="some fab fa-github"></i></a>
-              <a href="https://www.dribbble.com/hojelse" target="_blank"><i class="some fab fa-dribbble"></i></a>
-              <a href="https://www.linkedin.com/in/hojelse" target="_blank"><i class="some fab fa-linkedin"></i></a>
+            <a class="some" href="https://codepen.io/hojelse" target="_blank"><i class="fab fa-codepen someIcon"></i></a>
+            <a class="some" href="https://www.instagram.com/kristofferhojelse" target="_blank"><i class="fab fa-instagram someIcon"></i></a>
+            <a class="some" href="https://www.behance.net/hojelse" target="_blank"><i class="fab fa-behance someIcon"></i></a>
+            <a class="some" href="https://www.github.com/hojelse" target="_blank"><i class="fab fa-github someIcon"></i></a>
+            <a class="some" href="https://www.dribbble.com/hojelse" target="_blank"><i class="fab fa-dribbble someIcon"></i></a>
+            <a class="some" href="https://www.linkedin.com/in/hojelse" target="_blank"><i class="fab fa-linkedin someIcon"></i></a>
           </div>
         </div>
         <div class="emailCol">
-          <div class="airplaneContainer" id="airplaneContainer">
-            <i class="airplane fas fa-paper-plane" id="airplane"></i>
-          </div>
-          <a href="mailto:info@hojelse.com" onclick="airplane()">
-            <p class="footerEmail unselectable">info@hojelse.com</p>
+          <a class="footerEmail" href="mailto:info@hojelse.com?subject=Hello+friend+%F0%9F%91%8B" onclick="footer()">
+            <svg class="footerEmail2 unselectable" viewBox="0 0 172 20">
+              <text x="0" y="15">info@hojelse.com</text>
+            </svg>
           </a>
-          <div class="airplanePulse" id="airplanePulse"></div>
           <svg class="footerArrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve"> <g> <g> <polygon points="665.8,381.3 557.8,489.3 533.2,464.6 599,398.8 404.2,398.8 404.2,788.8 369.2,788.8 369.2,363.8 599,363.8 533.2,298 557.8,273.3 "/> </g> </g> </svg>
           <p class="footerTryme" id="tryme">MAIL ME!</p>
           <p class="footerTryme" id="trymeLoad">LAUNCHING EMAIL KLIENT ...</p>

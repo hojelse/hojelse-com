@@ -5,42 +5,37 @@ function scrolldown() {
   });
 };
 
-function airplane() {
-  var animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
-  var airplane = document.getElementById("airplane");
-  var airplaneContainer = document.getElementById("airplaneContainer");
-  var airplanePulse = document.getElementById("airplanePulse");
+function footer(){
   var tryme = document.getElementById("tryme");
   var trymeLoad = document.getElementById("trymeLoad");
   var footerArrowArray = document.getElementsByClassName("footerArrow");
   var footerArrow = footerArrowArray[0];
 
-  $(airplane).addClass("airplane-on");
-  $(tryme).addClass("tryme-in");
-  $(trymeLoad).addClass("trymeLoad-in");
-  $(footerArrow).addClass("footerArrow-in");
-
-  $(airplaneContainer).addClass("airplaneContainer-on");
-  $(airplaneContainer).one(animationEvent, function(event) {
-    $(airplanePulse).addClass("airplanePulse-on");
-
+  function trymeIn(){
+    $(tryme).addClass("tryme-in");
+    $(trymeLoad).addClass("trymeLoad-in");
+    $(footerArrow).addClass("footerArrow-in");
+  };
+  
+  function trymeOut(){
     $(tryme).removeClass("tryme-in");
     $(tryme).addClass("tryme-out");
     $(trymeLoad).removeClass("trymeLoad-in");
     $(trymeLoad).addClass("trymeLoad-out");
     $(footerArrow).removeClass("footerArrow-in");
     $(footerArrow).addClass("footerArrow-out");
-  });
-
-  $(airplanePulse).one(animationEvent, function(event) {
-    $(airplanePulse).removeClass('airplanePulse-on');
-    $(airplaneContainer).removeClass('airplaneContainer-on');
-    $(airplane).removeClass('airplane-on');
-
+  };
+  
+  function trymeReset(){
     $(tryme).removeClass("tryme-out");
     $(trymeLoad).removeClass("trymeLoad-out");
     $(footerArrow).removeClass("footerArrow-out");
-  });
+  };
+
+  trymeIn();
+  setTimeout(trymeOut, 3000);
+  setTimeout(trymeReset, 3200);
+
 };
 
 var tryme = document.getElementById("tryme");
