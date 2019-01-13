@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /ønsker.html
+Disallow: /shape-OGP.html
+Disallow: /modem.html
