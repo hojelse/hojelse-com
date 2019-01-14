@@ -66,10 +66,14 @@ mediaPost[4].onclick = function(){
 };
 
 mediaPost[5].onclick = function(){
-  window.open('https://codepen.io/hojelse/pen/WagPPp', '_blank');
+  window.open('https://github.com/hojelse/radio-modem-redesign', '_blank');
 };
 
 mediaPost[6].onclick = function(){
+  window.open('https://codepen.io/hojelse/pen/WagPPp', '_blank');
+};
+
+mediaPost[7].onclick = function(){
   window.open('https://codepen.io/hojelse/pen/VEKOmW?editors=0100', '_blank');
 };
 
