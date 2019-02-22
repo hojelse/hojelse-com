@@ -43,40 +43,6 @@ tryme.onclick = function(){
   $(tryme).addClass("tryme-on");
 };
 
-var mediaPost = document.getElementsByClassName("mediaPost");
-
-mediaPost[0].onclick = function(){
-  window.open('https://www.instagram.com/kristofferhojelse', '_blank');
-};
-
-mediaPost[1].onclick = function(){
-  window.open('https://www.instagram.com/kristofferhojelse/', '_blank');
-};
-
-mediaPost[2].onclick = function(){
-  window.open('https://www.instagram.com/kristofferhojelse/', '_blank');
-};
-
-mediaPost[3].onclick = function(){
-  window.open('https://www.behance.net/gallery/65214775/PHOTO-HOUSE-Visual-identity', '_blank');
-};
-
-mediaPost[4].onclick = function(){
-  window.open('https://www.behance.net/gallery/37098399/To-My-Green-Lands-Vinyl-record', '_blank');
-};
-
-mediaPost[5].onclick = function(){
-  window.open('https://www.behance.net/gallery/22889813/MEOWL-Mices-worst-nightmare', '_blank');
-};
-
-mediaPost[6].onclick = function(){
-  window.open('https://github.com/hojelse/radio-modem-redesign', '_blank');
-};
-
-mediaPost[7].onclick = function(){
-  window.open('https://codepen.io/hojelse/pen/VEKOmW?editors=0100', '_blank');
-};
-
 /*
 function mediaPost() {
   var animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
