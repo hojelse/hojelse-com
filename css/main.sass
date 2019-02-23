@@ -162,6 +162,9 @@ h1
 .mediaTitle:hover .mediaLogo, .mediaTitle:hover .mediaLink
     color: $c3
 
+.mediaTitle
+    transition: 0.5s ease-out
+
 .mediaCTA
     margin-top: 60px
     text-align: center
@@ -184,6 +187,19 @@ h1
     margin: 20px 0
     position: relative
     cursor: pointer
+    transition: 0.5s ease-out
+
+.mediaCol:nth-child(2) > .mediaPost, .mediaCol:nth-child(3) > .mediaTitle
+    transition-delay: 0.1s
+
+.mediaCol:nth-child(3) > .mediaPost, .mediaCol:nth-child(3) > .mediaTitle
+    transition-delay: 0.2s
+
+.hidden
+    transform: translateY(100px)
+
+.fade-in-element
+    transform: translateY(0)
 
 .mediaPostImg
     width: 100%
@@ -450,6 +466,7 @@ h6
 a
     color: inherit
     text-decoration: none
+    
 
 @media only screen and (max-width: 900px)
     .hide900

@@ -218,6 +218,11 @@ h1 {
   color: #777777;
 }
 
+.mediaTitle {
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
 .mediaCTA {
   margin-top: 60px;
   text-align: center;
@@ -245,6 +250,28 @@ h1 {
   margin: 20px 0;
   position: relative;
   cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.mediaCol:nth-child(2) > .mediaPost, .mediaCol:nth-child(3) > .mediaTitle {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.mediaCol:nth-child(3) > .mediaPost, .mediaCol:nth-child(3) > .mediaTitle {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.hidden {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.fade-in-element {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .mediaPostImg {
