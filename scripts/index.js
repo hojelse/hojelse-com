@@ -5,6 +5,7 @@ function scrolldown() {
   });
 };
 
+/*
 var animateHTML = function() {
   var elems;
   var windowHeight;
@@ -34,6 +35,7 @@ var animateHTML = function() {
   };
 };
 animateHTML().init();
+*/
 
 function footer(){
   var tryme = document.getElementById("tryme");

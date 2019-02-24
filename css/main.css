@@ -218,11 +218,6 @@ h1 {
   color: #777777;
 }
 
-.mediaTitle {
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
-}
-
 .mediaCTA {
   margin-top: 60px;
   text-align: center;
@@ -250,8 +245,6 @@ h1 {
   margin: 20px 0;
   position: relative;
   cursor: pointer;
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
 }
 
 .mediaCol:nth-child(2) > .mediaPost, .mediaCol:nth-child(3) > .mediaTitle {
