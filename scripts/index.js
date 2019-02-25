@@ -1,9 +1,10 @@
 function scrolldown() {
-  /*$('.scroll-down').click (function() {
+  $('.scroll-down').click (function() {
     $('html, body').animate({scrollTop: $('section.mediaContainer').offset().top }, 'slow');
     return false;
-  });*/
-  ga('send', 'event', 'Inbound links', 'click', 'header arrow');
+  });
+  ga('send', 'event', 'Inbound-links', 'click', 'header-arrow');
+  console.log('ga event sent');
 };
 
 /*
