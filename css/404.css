@@ -50,11 +50,11 @@ body {
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
     margin: -20px;
-    100% {
-      -webkit-transform: rotate(390deg);
-              transform: rotate(390deg);
-      margin: -20px;
-    }
+  }
+  100% {
+    -webkit-transform: rotate(390deg);
+            transform: rotate(390deg);
+    margin: -20px;
   }
 }
 
@@ -63,11 +63,11 @@ body {
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
     margin: -20px;
-    100% {
-      -webkit-transform: rotate(390deg);
-              transform: rotate(390deg);
-      margin: -20px;
-    }
+  }
+  100% {
+    -webkit-transform: rotate(390deg);
+            transform: rotate(390deg);
+    margin: -20px;
   }
 }
 
@@ -80,6 +80,9 @@ body {
   text-transform: uppercase;
   color: #BBB;
   margin-right: -10px;
+}
+
+.text:nth-child(2) {
   text-align: center;
   font-size: 31px;
   color: #777;
