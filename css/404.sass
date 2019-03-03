@@ -1,0 +1,52 @@
+body 
+	height: 100vh 
+	margin: 0 
+	font-family: Source Sans Pro 
+
+.container 
+	height: 100% 
+	width: 100% 
+	background-color: #f6f6f6 
+	display: flex 
+	align-items: center 
+	justify-content: center 
+	flex-direction: column 
+
+.wrapper 
+	height: 60px 
+	padding: 50px 
+
+.circle 
+	height: 50px 
+	width: 50px 
+	background-color: #555 
+	border-radius: 50% 
+	transform-origin: top center 
+	animation: 2s rotate infinite 
+
+	&:nth-child(1) 
+		background-color: #97BAC7 
+		transform-origin: bottom center 
+
+@keyframes rotate 
+	0%
+		transform: rotate(30deg) 
+		margin: -20px 
+  100% 
+    transform: rotate(390deg) 
+    margin: -20px 
+
+.text 
+  text-align: left 
+  font-size: 10px 
+  font-weight: 700 
+  letter-spacing: 2px 
+  line-height: 15px 
+  text-transform: uppercase 
+  color: #BBB 
+  margin-right: -10px 
+  &:nth-child(2) 
+		text-align: center 
+		font-size: 31px 
+		color: #777 
+		margin: 30px 
