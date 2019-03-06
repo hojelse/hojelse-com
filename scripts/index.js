@@ -17,12 +17,13 @@ document.addEventListener('mousemove', e => {
 })
 */
 
-/*
 var animateHTML = function() {
   var elems;
   var windowHeight;
   function init() {
     elems = document.querySelectorAll('.hidden');
+    console.log(elems);
+    
     windowHeight = window.innerHeight;
     addEventHandlers();
     checkPosition();
@@ -34,11 +35,12 @@ var animateHTML = function() {
   function checkPosition() {
     for (var i = 0; i < elems.length; i++) {
       var positionFromTop = elems[i].getBoundingClientRect().top;
-      if (positionFromTop - windowHeight <= 50) {
+      if (positionFromTop - windowHeight <= 0) {
         elems[i].className = elems[i].className.replace(
           'hidden',
           'fade-in-element'
         );
+        console.log("faded in element");
       }
     }
   }
@@ -47,7 +49,7 @@ var animateHTML = function() {
   };
 };
 animateHTML().init();
-*/
+
 
 function footer(){
   var tryme = document.getElementById("tryme");

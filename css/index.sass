@@ -7,116 +7,116 @@ $highlight: #4BCEFF
 $highlight2: #97BAC7
 
 /*
-    background-color: rgba(12,45,63,0.1)
+	background-color: rgba(12,45,63,0.1)
 
 p
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
 
 .fde
-    background-color: #fde
+	background-color: #fde
 
 .fed
-    background-color: #fed
+	background-color: #fed
 
 ::selection
-  background: $highlight
-  color: $body
-  fill: $body
+	background: $highlight
+	color: $body
+	fill: $body
 
 ::-moz-selection
-  background: $highlight
+	background: $highlight
 
 body
-    padding: 0
-    margin: 0
-    font-family: Source Sans Pro
+	padding: 0
+	margin: 0
+	font-family: Source Sans Pro
 
 .unselectable
-    -webkit-touch-callout: none
-    -webkit-user-select: none
-    -khtml-user-select: none
-    -moz-user-select: none
-    -ms-user-select: none
-    user-select: none
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
 
 .container
-    background-color: $body
+	background-color: $body
 
 .cursor
-    position: absolute
-    height: 10px
-    width: 10px
-    background-color: $highlight
-    margin: -5px -5px
-    z-index: 1
-    border-radius: 50%
-    pointer-events: none
-    border-style: solid
-    border-color: $body
+	position: absolute
+	height: 10px
+	width: 10px
+	background-color: $highlight
+	margin: -5px -5px
+	z-index: 1
+	border-radius: 50%
+	pointer-events: none
+	border-style: solid
+	border-color: $highlight
 
 //HEADER
 .scroll-down
-    -webkit-transition: all .5s ease-in 3s
-    transition: all .5s ease-in 3s
-    cursor: pointer
-    
+	-webkit-transition: all .5s ease-in 3s
+	transition: all .5s ease-in 3s
+	cursor: pointer
+	
 .headerContainer
-    position: relative
-    width: 100%
-    height: 100vh
+	position: relative
+	width: 100%
+	height: 100vh
 
 .header
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%,-50%)
-    height: 100%
-    width: 900px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	height: 100%
+	width: 900px
 
 .leftColumn
-    height: 100%
-    width: 50%
-    float: left
-    position: relative
+	height: 100%
+	width: 50%
+	float: left
+	position: relative
 
 .rightColumn
-    height: 100%
-    width: 50%
-    float: right
-    position: relative
+	height: 100%
+	width: 50%
+	float: right
+	position: relative
 
 .pb
-    width: 70%
-    box-shadow: 4px 4px 10px 0px #ddd
-    background-color: $c1
-    position: absolute
-    top: 45%
-    left: 50%
-    transform: translate(-50%,-50%)
-    border-radius: 50%
+	width: 70%
+	box-shadow: 4px 4px 10px 0px #ddd
+	background-color: $c1
+	position: absolute
+	top: 45%
+	left: 50%
+	transform: translate(-50%,-50%)
+	border-radius: 50%
 
 .heading
-    width: 80%
-    position: absolute
-    top: 45%
-    left: 50%
-    transform: translate(-50%,-50%)
+	width: 80%
+	position: absolute
+	top: 45%
+	left: 50%
+	transform: translate(-50%,-50%)
 
 h1
-    font-size: 33px
-    margin: 0
-    color: $c3
+	font-size: 33px
+	margin: 0
+	color: $c3
 
 .iama
-    font-size: 13px
-    letter-spacing: 4px
-    font-weight: 700
-    color: $c2
+	font-size: 13px
+	letter-spacing: 4px
+	font-weight: 700
+	color: $c2
 
 .typed-cursor
-   opacity: 0
-   display: none
+	opacity: 0
+	display: none
 
 .type::after
 	content: "|"
@@ -124,473 +124,487 @@ h1
 	animation: blink 0.7s infinite
 
 @keyframes blink
-    0%
-        opacity: 1
-    50%
-        opacity: 0
-    100%
-        opacity: 1
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
 
 .headerArrow
-    height: 60px
-    position: absolute
-    left: 50%
-    transform: translate(-50%, 0) rotate(90deg)
-    bottom: 80px
-    fill: $c2
-    border-radius: 50%
-    transition: 0.1s ease-in-out
-    &:hover
-        fill: $c3
+	height: 60px
+	position: absolute
+	left: 50%
+	transform: translate(-50%, 0) rotate(90deg)
+	bottom: 80px
+	fill: $c2
+	border-radius: 50%
+	transition: 0.1s ease-in-out
+	&:hover
+		fill: $c3
 
 //MEDIA POST COLUMNS
 
 .mediaContainer
-    width: 100%
-    padding-top: 200px
-    position: relative
+	width: 100%
+	padding-top: 200px
+	position: relative
 
 .rowCols
-    width: 900px
-    margin: auto
-    display: flex
-    flex-direction: row
+	width: 900px
+	margin: auto
+	display: flex
+	flex-direction: row
 
 .mediaCol
-    flex-grow: 1
-    display: flex
-    flex-direction: column
-    align-items: center
+	flex-grow: 1
+	display: flex
+	flex-direction: column
+	align-items: center
 
 .mediaLogo
-    display: inline-block
-    width: 100%
-    text-align: center
-    font-size: 35px
-    color: $c2
-    transition: 0.2s
+	display: inline-block
+	width: 100%
+	text-align: center
+	font-size: 35px
+	color: $c2
+	transition: 0.2s
 
 .mediaLink
-    text-align: center
-    font-size: 12px
-    font-weight: 700
-    color: $c2
-    margin-bottom: 100px
-    transition: 0.2s
+	text-align: center
+	font-size: 12px
+	font-weight: 700
+	color: $c2
+	margin-bottom: 100px
+	transition: 0.2s
 
 .mediaTitle:hover .mediaLogo, .mediaTitle:hover .mediaLink
-    color: $c3
+	color: $c3
 
 .mediaCTA
-    margin-top: 60px
-    text-align: center
-    font-size: 10px
-    font-weight: 700
-    letter-spacing: 2px
-    text-transform: uppercase
-    color: $c2
-    margin-bottom: 100px
-    transition: 0.2s
-    &:hover
-        color: $c3
+	margin-top: 60px
+	text-align: center
+	font-size: 10px
+	font-weight: 700
+	letter-spacing: 2px
+	text-transform: uppercase
+	color: $c2
+	margin-bottom: 100px
+	transition: 0.2s
+	&:hover
+		color: $c3
 
 .mediaPost
-    width: 250px
-    margin: auto
-    background-color: white
-    border-radius: 10px
-    box-shadow: 4px 4px 10px 0px #ddd
-    margin: 20px 0
-    position: relative
-    cursor: pointer
+	width: 250px
+	margin: auto
+	background-color: white
+	border-radius: 10px
+	box-shadow: 4px 4px 10px 0px #ddd
+	margin: 20px 0
+	position: relative
+	transition: 0.2s ease-in
+
+.mediaCol:nth-child(2) .mediaPost
+	transition-delay: 0.1s
+
+.mediaCol:nth-child(3) .mediaPost
+	transition-delay: 0.2s
+
+.hidden
+	opacity: 0.5
+	transform: scale(0.8)
+
+.fade-in-element
+	transform: none
+	opacity: 1
 
 .mediaPostImg
-    width: 100%
-    border-radius: 10px 10px 0px 0px
+	width: 100%
+	border-radius: 10px 10px 0px 0px
 
 .mediaPostWrap
-    width: 100%
-    height: 40px
-    margin-top: -5px //dirty fix
-    display: flex
-    align-items: center
+	width: 100%
+	height: 40px
+	margin-top: -5px //dirty fix
+	display: flex
+	align-items: center
 
 .mediaPostWrapLogo
-    color: $c3
-    font-size: 20px
-    margin: 0px 20px
+	color: $c3
+	font-size: 20px
+	margin: 0px 20px
 
 .mediaPostWrapBtn1
-    color: $c3
-    font-size: 20px
-    margin: 0px 20px
+	color: $c3
+	font-size: 20px
+	margin: 0px 20px
 
 .mediaPostWrapBtn2
-    color: $c3
-    font-size: 20px
+	color: $c3
+	font-size: 20px
 
 .mediaPostTitle
-    font-size: 12px
-    font-weight: 700
-    color: $c3
-    margin: 0px 20px
-    text-transform: uppercase
+	font-size: 12px
+	font-weight: 700
+	color: $c3
+	margin: 0px 20px
+	text-transform: uppercase
 
 .mediaPostWrapSpacer
-    flex-grow: 1
-        
+	flex-grow: 1
+			
 .abstract
-    width: calc(100% - 40px)
-    margin: auto
-    padding-bottom: 10px
+	width: calc(100% - 40px)
+	margin: auto
+	padding-bottom: 10px
 
 .abstract p
-    font-size: 12px
-    font-weight: 400
-    color: #999
-    line-height: 1.4
-    word-spacing: 1.5px
+	font-size: 12px
+	font-weight: 400
+	color: #999
+	line-height: 1.4
+	word-spacing: 1.5px
 
 .display
-    display: block
-    max-height: 100px
+	display: block
+	max-height: 100px
 
 h3
-    color: $c3
-    float: left
-    font-size: 10pt
-    top: 50%
-    margin: 0
-    position: relative
-    transform: translate(0,-50%)
+	color: $c3
+	float: left
+	font-size: 10pt
+	top: 50%
+	margin: 0
+	position: relative
+	transform: translate(0,-50%)
 
 //FOOTER
 .footer
-    width: 100%
-    height: 400px
-    position: relative
+	width: 100%
+	height: 400px
+	position: relative
 
 .footerContainer
-    height: 120px
-    width: 900px
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%,-50%)
+	height: 120px
+	width: 900px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
 
 .someCol
-    height: 100%
-    float: left
-    width: 25%
-    margin: 0 4.16%
-    position: relative
-    border-right-style: solid
-    border-color: $c1
-    background-color: $body
-    display: flex
-    align-items: center
-    justify-content: center
+	height: 100%
+	float: left
+	width: 25%
+	margin: 0 4.16%
+	position: relative
+	border-right-style: solid
+	border-color: $c1
+	background-color: $body
+	display: flex
+	align-items: center
+	justify-content: center
 
 .someContainer
-    height: 80px
-    width: 140px
-    display: flex
-    flex-wrap: wrap
+	height: 80px
+	width: 140px
+	display: flex
+	flex-wrap: wrap
 
 .some
-    display: inline-block
-    position: relative
-    flex: 0 calc(100%/3)
+	display: inline-block
+	position: relative
+	flex: 0 calc(100%/3)
 
 .someIcon
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
 
-    color: $c2
-    font-size: 25px
-    transition: 0.1s
-    &:hover
-        color: $c3
+	color: $c2
+	font-size: 25px
+	transition: 0.1s
+	&:hover
+		color: $c3
 
 .emailCol
-    width: 57.2%
-    height: 100%
-    margin: 0 4.16%
-    float: left
-    position: relative
+	width: 57.2%
+	height: 100%
+	margin: 0 4.16%
+	float: left
+	position: relative
 
 .footerArrow
-    position: absolute
-    height: 40px
-    right: 16px
-    top: 2px
-    transform: translate(-100%,0) rotate(90deg) scaleY(-1)
-    fill: $c2
+	position: absolute
+	height: 40px
+	right: 16px
+	top: 2px
+	transform: translate(-100%,0) rotate(90deg) scaleY(-1)
+	fill: $c2
 
 .footerTryme
-    z-index: -1
-    text-align: right
-    position: absolute
-    height: 60px
-    right: 0
-    top: 0px
-    text-align: center
-    font-size: 10px
-    font-weight: 700
-    letter-spacing: 2px
-    color: $c2
+	z-index: -1
+	text-align: right
+	position: absolute
+	height: 60px
+	right: 0
+	top: 0px
+	text-align: center
+	font-size: 10px
+	font-weight: 700
+	letter-spacing: 2px
+	color: $c2
 
 .tryme-in
-    animation: tryme-in 0.2s ease-in forwards
+	animation: tryme-in 0.2s ease-in forwards
 
 @keyframes tryme-in
-    0%
-        
-    100%
-        transform: translate(0,-30%)
-        opacity: 0
+	0%
+			
+	100%
+		transform: translate(0,-30%)
+		opacity: 0
 
 .tryme-out
-    animation: tryme-out 0.2s ease-out forwards
+	animation: tryme-out 0.2s ease-out forwards
 
 @keyframes tryme-out
-    0%
-        transform: translate(0,-30%)
-        opacity: 0
-    100%
+	0%
+		transform: translate(0,-30%)
+		opacity: 0
+	100%
 
 #trymeLoad
-    opacity: 0
+	opacity: 0
 
 .trymeLoad-in
-    animation: trymeLoad-in 0.2s ease-in forwards
+	animation: trymeLoad-in 0.2s ease-in forwards
 
 @keyframes trymeLoad-in
-    0%
-        transform: translate(0,30%)
-        opacity: 0
-    100%
-        opacity: 1
-        
+	0%
+		transform: translate(0,30%)
+		opacity: 0
+	100%
+		opacity: 1
+			
 .trymeLoad-out
-    animation: trymeLoad-out 0.2s ease-out forwards
+	animation: trymeLoad-out 0.2s ease-out forwards
 
 @keyframes trymeLoad-out
-    0%
-        opacity: 1
-    100%
-        transform: translate(0,30%)
-        opacity: 0
+	0%
+		opacity: 1
+	100%
+		transform: translate(0,30%)
+		opacity: 0
 
 #footerArrow
-    opacity: 0
+	opacity: 0
 
 .footerArrow-in
-    animation: footerArrow-in 0.2s ease-out forwards
+	animation: footerArrow-in 0.2s ease-out forwards
 
 @keyframes footerArrow-in
-    0%
-        right: 0
-    100%
-        right: 139px
+	0%
+		right: 0
+	100%
+		right: 139px
 
 .footerArrow-out
-    animation: footerArrow-out 0.2s ease-in forwards
+	animation: footerArrow-out 0.2s ease-in forwards
 
 @keyframes footerArrow-out
-    0%
-        right: 125px
-    100%
-        right: 0
+	0%
+		right: 125px
+	100%
+		right: 0
 
 .footerEmail
-    cursor: pointer
+	cursor: pointer
 
 .footerEmail2
-    height: 100%
-    width: 100%
-    font-weight: 700
-    letter-spacing: 3px
-    fill: $c2
-    &:hover
-        fill: $c3
+	height: 100%
+	width: 100%
+	font-weight: 700
+	letter-spacing: 3px
+	fill: $c2
+	&:hover
+		fill: $c3
 
 //NEW BEACON
 
 .new
-    margin: 0
-    position: absolute
-    font-size: 0px
-    letter-spacing: 4px
-    font-weight: 700
-    color: white
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    transition: 0.3s
-    opacity: 0
+	margin: 0
+	position: absolute
+	font-size: 0px
+	letter-spacing: 4px
+	font-weight: 700
+	color: white
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	transition: 0.3s
+	opacity: 0
 
 .beacon:hover .new
-    opacity: 1
-    font-size: 10px
+	opacity: 1
+	font-size: 10px
 
 .beacon
-    transform: translate(-50%, 50%)
-    width: 12px
-    height: 12px
-    right: 0
-    background: $highlight
-    border-radius: 50%
-    position: absolute
-    animation: pulse 3s ease-in-out infinite
-    transition: 0.3s
-    transform-origin: 50% 50%
-    &:hover
-        width: 48px
-        height: 48px
-        transform: translate(25%,-25%)
+	transform: translate(-50%, 50%)
+	width: 12px
+	height: 12px
+	right: 0
+	background: $highlight
+	border-radius: 50%
+	position: absolute
+	animation: pulse 3s ease-in-out infinite
+	transition: 0.3s
+	transform-origin: 50% 50%
+	&:hover
+		width: 48px
+		height: 48px
+		transform: translate(25%,-25%)
 
 @keyframes pulse
-  0%, 70%
-    box-shadow: 0px 0px 0px 0px rgba(75, 206, 255, 0.5)
-  100%
-    box-shadow: 0px 0px 0px 70px rgba(75, 206, 255, 0)
+0%, 70%
+	box-shadow: 0px 0px 0px 0px rgba(75, 206, 255, 0.5)
+100%
+	box-shadow: 0px 0px 0px 70px rgba(75, 206, 255, 0)
 
 a
-    color: inherit
-    text-decoration: none
-    
+	color: inherit
+	text-decoration: none
+	
 
 @media only screen and (max-width: 900px)
-    .hide900
-        display: none
+	.hide900
+		display: none
 
-    .headerContainer
-        margin-bottom: 50px
-    
-    .header
-        height: 100%
-        position: relative
+	.headerContainer
+		margin-bottom: 50px
 
-    .leftColumn
-        height: 45%
-        width: 100%
-        max-width: 400px
-        margin: auto
-        float: none
-    
-    .rightColumn
-        height: 55%
-        width: 100%
-        max-width: 400px
-        margin: auto
-        float: none
-    
-    .pb
-        width: 40%
-        position: absolute
-        top: auto
-        bottom: 0
-        left: 50%
-        transform: translate(-50%,0)
+	.header
+		height: 100%
+		position: relative
 
-    .heading
-        width: 60%
-        top: 40px
-        left: 50%
-        transform: translate(-50%,0)
+	.leftColumn
+		height: 45%
+		width: 100%
+		max-width: 400px
+		margin: auto
+		float: none
 
-    h1
-        font-size: 31px
-        margin: 0
-        color: $c3
+	.rightColumn
+		height: 55%
+		width: 100%
+		max-width: 400px
+		margin: auto
+		float: none
 
-    .iama
-        font-size: 11px
-        letter-spacing: 4px
-        font-weight: 700
-        color: $c2
+	.pb
+		width: 40%
+		position: absolute
+		top: auto
+		bottom: 0
+		left: 50%
+		transform: translate(-50%,0)
 
-    .mediaContainer
-        padding-top: 50px
+	.heading
+		width: 60%
+		top: 40px
+		left: 50%
+		transform: translate(-50%,0)
 
-    .mediaLink
-        margin-bottom: 60px
+	h1
+		font-size: 31px
+		margin: 0
+		color: $c3
 
-    .mediaCol
-        float: none
-        width: 90%
-        max-width: 400px
-        margin: auto
-        margin-bottom: 100px
+	.iama
+		font-size: 11px
+		letter-spacing: 4px
+		font-weight: 700
+		color: $c2
 
-    .mediaContainer
-        height: initial
-    
-    .mediaCTA
-        display: none
+	.mediaContainer
+		padding-top: 50px
 
-    .rowCols
-        width: 100%
-        flex-direction: column
-    
-    .footer
-        width: 100%
-        height: 160px
-        margin-bottom: 80px
+	.mediaLink
+		margin-bottom: 60px
 
-    .footerContainer
-        height: 100%
-        width: 250px
-        position: relative
+	.mediaCol
+		float: none
+		width: 90%
+		max-width: 400px
+		margin: auto
+		margin-bottom: 100px
 
-    .someCol
-        height: 50%
-        float: none
-        width: 100%
-        background: none
-        position: absolute
-        bottom: 0
-        border: none
-        margin: 0
+	.mediaContainer
+		height: initial
 
-    .someContainer
-        height: 80px
-        width: 100%
-        display: flex
+	.mediaCTA
+		display: none
 
-    .some
-        display: inline-block
-        position: relative
-        flex: 0 calc(100%/6)
+	.rowCols
+		width: 100%
+		flex-direction: column
 
-    .someIcon
-        font-size: 28px
+	.footer
+		width: 100%
+		height: 160px
+		margin-bottom: 80px
 
-    .emailCol
-        width: 100%
-        height: initial
-        margin: 0
-        float: none
-        height: 50%
+	.footerContainer
+		height: 100%
+		width: 250px
+		position: relative
 
-    .beacon
-        width: 48px
-        height: 48px
-        transform: translate(25%,-25%)
+	.someCol
+		height: 50%
+		float: none
+		width: 100%
+		background: none
+		position: absolute
+		bottom: 0
+		border: none
+		margin: 0
 
-    .new
-        opacity: 1
-        font-size: 10px
+	.someContainer
+		height: 80px
+		width: 100%
+		display: flex
 
-    .footerArrow
-        right: 16px
-        top: -8px
+	.some
+		display: inline-block
+		position: relative
+		flex: 0 calc(100%/6)
 
-    .footerTryme
-        right: 0
-        top: -10px
-    
-    #trymeLoad
+	.someIcon
+		font-size: 28px
+
+	.emailCol
+		width: 100%
+		height: initial
+		margin: 0
+		float: none
+		height: 50%
+
+	.beacon
+		width: 48px
+		height: 48px
+		transform: translate(25%,-25%)
+
+	.new
+		opacity: 1
+		font-size: 10px
+
+	.footerArrow
+		right: 16px
+		top: -8px
+
+	.footerTryme
+		right: 0
+		top: -10px
+
+	#trymeLoad
