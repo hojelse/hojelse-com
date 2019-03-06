@@ -8,6 +8,16 @@ function scrolldown() {
 };
 
 /*
+const cursor = document.querySelector('.cursor');
+console.log(cursor);
+
+document.addEventListener('mousemove', e => {
+  cursor.setAttribute("style", "top: "+e.pageY+"px; left: "+e.pageX+"px;");
+  console.log(e);
+})
+*/
+
+/*
 var animateHTML = function() {
   var elems;
   var windowHeight;
