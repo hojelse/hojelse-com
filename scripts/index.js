@@ -21,9 +21,7 @@ var animateHTML = function() {
   var elems;
   var windowHeight;
   function init() {
-    elems = document.querySelectorAll('.hidden');
-    console.log(elems);
-    
+    elems = document.querySelectorAll('.hidden');   
     windowHeight = window.innerHeight;
     addEventHandlers();
     checkPosition();
@@ -40,7 +38,6 @@ var animateHTML = function() {
           'hidden',
           'fade-in-element'
         );
-        console.log("faded in element");
       }
     }
   }
