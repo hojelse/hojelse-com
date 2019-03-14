@@ -47,6 +47,7 @@ animateHTML().init();
 
 
 function footer(){
+  
   var tryme = document.getElementById("tryme");
   var trymeLoad = document.getElementById("trymeLoad");
   var footerArrowArray = document.getElementsByClassName("footerArrow");
