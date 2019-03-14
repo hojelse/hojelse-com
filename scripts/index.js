@@ -3,8 +3,6 @@ function scrolldown() {
     $('html, body').animate({scrollTop: $('section.mediaContainer').offset().top }, 'slow');
     return false;
   });
-  ga('send', 'event', 'Inbound-links', 'click', 'header-arrow');
-  console.log('ga event sent');
 };
 
 /*
