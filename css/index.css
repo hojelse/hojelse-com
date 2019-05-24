@@ -845,6 +845,9 @@ a {
     float: none;
     height: 50%;
   }
+  .footerEmail2:hover {
+    fill: #BBB;
+  }
   .beacon {
     width: 48px;
     height: 48px;
