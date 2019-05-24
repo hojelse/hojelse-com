@@ -731,6 +731,9 @@ a {
     height: 100%;
     position: relative;
   }
+  .headerArrow:hover {
+    fill: #BBB;
+  }
   .leftColumn {
     height: 45%;
     width: 100%;
