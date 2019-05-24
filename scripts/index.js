@@ -1,8 +1,6 @@
 function scrolldown() {
-  $('.scroll-down').click (function() {
-    $('html, body').animate({scrollTop: $('section.mediaContainer').offset().top }, 'slow');
-    return false;
-  });
+  $('html, body').animate({ scrollTop: $('section.mediaContainer').offset().top }, 'slow');
+  return false;
 };
 
 /*
@@ -15,11 +13,11 @@ document.addEventListener('mousemove', e => {
 })
 */
 
-var animateHTML = function() {
+var animateHTML = function () {
   var elems;
   var windowHeight;
   function init() {
-    elems = document.querySelectorAll('.hidden');   
+    elems = document.querySelectorAll('.hidden');
     windowHeight = window.innerHeight;
     addEventHandlers();
     checkPosition();
@@ -46,20 +44,20 @@ var animateHTML = function() {
 animateHTML().init();
 
 
-function footer(){
-  
+function footer() {
+
   var tryme = document.getElementById("tryme");
   var trymeLoad = document.getElementById("trymeLoad");
   var footerArrowArray = document.getElementsByClassName("footerArrow");
   var footerArrow = footerArrowArray[0];
 
-  function trymeIn(){
+  function trymeIn() {
     $(tryme).addClass("tryme-in");
     $(trymeLoad).addClass("trymeLoad-in");
     $(footerArrow).addClass("footerArrow-in");
   };
-  
-  function trymeOut(){
+
+  function trymeOut() {
     $(tryme).removeClass("tryme-in");
     $(tryme).addClass("tryme-out");
     $(trymeLoad).removeClass("trymeLoad-in");
@@ -67,8 +65,8 @@ function footer(){
     $(footerArrow).removeClass("footerArrow-in");
     $(footerArrow).addClass("footerArrow-out");
   };
-  
-  function trymeReset(){
+
+  function trymeReset() {
     $(tryme).removeClass("tryme-out");
     $(trymeLoad).removeClass("trymeLoad-out");
     $(footerArrow).removeClass("footerArrow-out");
@@ -81,7 +79,7 @@ function footer(){
 };
 
 var tryme = document.getElementById("tryme");
-tryme.onclick = function(){
+tryme.onclick = function () {
   $(tryme).addClass("tryme-on");
 };
 
@@ -110,7 +108,7 @@ function mediaPost() {
 
 //Google analytics event tracking
 //ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);
-function gaEventTracking(eventLabel){
+function gaEventTracking(eventLabel) {
   ga('send', 'event', 'Outbound links', 'IG post click', eventLabel);
 }
 
