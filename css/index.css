@@ -128,7 +128,7 @@ h1 {
   font-size: 13px;
   letter-spacing: 4px;
   font-weight: 700;
-  color: #BBB;
+  color: #AAA;
 }
 
 .typed-cursor {
@@ -174,7 +174,7 @@ h1 {
   -webkit-transform: translate(-50%, 0) rotate(90deg);
           transform: translate(-50%, 0) rotate(90deg);
   bottom: 80px;
-  fill: #BBB;
+  fill: #AAA;
   border-radius: 50%;
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
@@ -223,7 +223,7 @@ h1 {
   width: 100%;
   text-align: center;
   font-size: 35px;
-  color: #BBB;
+  color: #AAA;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -232,7 +232,7 @@ h1 {
   text-align: center;
   font-size: 12px;
   font-weight: 700;
-  color: #BBB;
+  color: #AAA;
   margin-bottom: 100px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -249,7 +249,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #BBB;
+  color: #AAA;
   margin-bottom: 100px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -432,7 +432,7 @@ h3 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: #BBB;
+  color: #AAA;
   font-size: 25px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -457,7 +457,7 @@ h3 {
   top: 2px;
   -webkit-transform: translate(-100%, 0) rotate(90deg) scaleY(-1);
           transform: translate(-100%, 0) rotate(90deg) scaleY(-1);
-  fill: #BBB;
+  fill: #AAA;
 }
 
 .footerTryme {
@@ -471,7 +471,7 @@ h3 {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #BBB;
+  color: #AAA;
 }
 
 .tryme-in {
@@ -641,7 +641,7 @@ h3 {
   width: 100%;
   font-weight: 700;
   letter-spacing: 3px;
-  fill: #BBB;
+  fill: #AAA;
 }
 
 .footerEmail2:hover {
@@ -732,7 +732,7 @@ a {
     position: relative;
   }
   .headerArrow:hover {
-    fill: #BBB;
+    fill: #AAA;
   }
   .leftColumn {
     height: 45%;
@@ -773,7 +773,7 @@ a {
     font-size: 11px;
     letter-spacing: 4px;
     font-weight: 700;
-    color: #BBB;
+    color: #AAA;
   }
   .mediaContainer {
     padding-top: 50px;
@@ -846,7 +846,7 @@ a {
     height: 50%;
   }
   .footerEmail2:hover {
-    fill: #BBB;
+    fill: #AAA;
   }
   .beacon {
     width: 48px;
