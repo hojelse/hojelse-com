@@ -13,6 +13,10 @@ document.addEventListener('mousemove', e => {
 })
 */
 
+function mailto(URL) {
+  setTimeout(function () { window.location = URL }, 500);
+}
+
 var animateHTML = function () {
   var elems;
   var windowHeight;
