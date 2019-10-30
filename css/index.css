@@ -184,6 +184,33 @@ h1 {
   fill: #777777;
 }
 
+.socialsTitle {
+  width: 900px;
+  margin: auto;
+}
+
+h2 {
+  position: relative;
+  color: #777777;
+  font-size: 40pt;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.socialsP {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  color: #777777;
+  margin-bottom: 120px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.4;
+  word-spacing: 1.5px;
+  margin-left: 23px;
+}
+
 .mediaContainer {
   width: 100%;
   padding-top: 200px;
