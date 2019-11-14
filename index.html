@@ -20,7 +20,7 @@
 
   <title>Kristoffer Højelse</title>
   <meta name="description"
-    content="Kristoffer is an aspiring maker of useful stuff. I'm an apiring photographer, graphic designer, web designer.">
+    content="Kristoffer is an aspiring maker of useful stuff. I'm an apiring programmer, graphic designer, web designer.">
   <meta name="author" content="Kristoffer Højelse">
 
   <link rel="canonical" href="https://hojelse.com">
@@ -69,7 +69,7 @@
   <script>
     $(function () {
       $(".type").typed({
-        strings: ["graphic designer", "photographer", "web designer"],
+        strings: ["graphic designer", "software dev", "web designer"],
         stringsElement: null,
         // typing speed
         typeSpeed: 30,
@@ -131,7 +131,7 @@
         <div class="socialsTitle">
           <h2>My socials</h2>
           <p class="socialsP">I am an aspiring creative professional and have grown an affinity for three main areas,
-            web design, graphic design and lately programming and these are the platforms I am posting on most
+            web design, graphic design and lately software development and these are the platforms I am posting on most
             regularly.
           </p>
         </div>
@@ -160,6 +160,20 @@
             </div>
           </a>
           <a class="mediaPost hidden"
+            onclick="gtag('event', 'clicks', {'event_category': 'Outbound links', 'event_label': 'Codepen post: Audio player'});"
+            href="https://codepen.io/hojelse/full/KKKBRJj" target="_blank"
+            onclick="handleOutboundLinkClicks('Nightmode toggle');">
+            <img class="mediaPostImg" src="images/player3.png" name="Vinyl record audio player">
+            <div class="mediaPostWrap">
+              <p class="mediaPostTitle">Audio player</p>
+              <div class="mediaPostWrapSpacer"></div>
+              <i class="fab fa-codepen mediaPostWrapLogo"></i>
+            </div>
+            <div class="abstract" id="a">
+              <p>A vinyl record audio player</p>
+            </div>
+          </a>
+          <a class="mediaPost hidden"
             onclick="gtag('event', 'clicks', {'event_category': 'Outbound links', 'event_label': 'Codepen post: Tree'});"
             href="https://codepen.io/hojelse/full/XWWabpj" target="_blank"
             onclick="handleOutboundLinkClicks('Tree');">
@@ -171,20 +185,6 @@
             </div>
             <div class="abstract" id="a">
               <p>A tree swaying in the wind.</p>
-            </div>
-          </a>
-          <a class="mediaPost hidden"
-            onclick="gtag('event', 'clicks', {'event_category': 'Outbound links', 'event_label': 'Codepen post: Nightmode toggle'});"
-            href="https://codepen.io/hojelse/full/VEKOmW" target="_blank"
-            onclick="handleOutboundLinkClicks('Nightmode toggle');">
-            <img class="mediaPostImg" src="images/nightmode.png" name="Nightmode toggle button">
-            <div class="mediaPostWrap">
-              <p class="mediaPostTitle">Nightmode toggle</p>
-              <div class="mediaPostWrapSpacer"></div>
-              <i class="fab fa-codepen mediaPostWrapLogo"></i>
-            </div>
-            <div class="abstract" id="a">
-              <p>A fun toggle button that morfs into a half moon</p>
             </div>
           </a>
           <a onclick="gtag('event', 'clicks', {'event_category': 'Outbound links', 'event_label': 'Codepen more'});"
@@ -263,19 +263,6 @@
             </div>
             <div class="abstract">
               <p>TicTacToe in java with javafx</p>
-            </div>
-          </a>
-          <a class="mediaPost hidden"
-            onclick="gtag('event', 'clicks', {'event_category': 'Outbound links', 'event_label': 'Github post: Radio modem'});"
-            href="https://github.com/hojelse/radio-modem-redesign" target="_blank" onclick="">
-            <img class="unselectable mediaPostImg" src="images/modem.png" name="Podcast website redesign">
-            <div class="mediaPostWrap">
-              <p class="mediaPostTitle">Website redesign</p>
-              <div class="mediaPostWrapSpacer"></div>
-              <i class="fab fa-github mediaPostWrapLogo"></i>
-            </div>
-            <div class="abstract" id="a">
-              <p>A website redesign of Radio Modem a podcast by and for students at IT-Univerity Copenhagen</p>
             </div>
           </a>
           <a onclick="gtag('event', 'clicks', {'event_category': 'Outbound links', 'event_label': 'Github more'});"
