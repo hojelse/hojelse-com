@@ -341,8 +341,8 @@ h2 {
 }
 
 .mediaPostWrapLogo {
-  color: #777777;
-  font-size: 20px;
+  fill: #777777;
+  height: 20px;
   margin: 0px 20px;
 }
 
