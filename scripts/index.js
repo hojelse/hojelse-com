@@ -1,17 +1,9 @@
+
+
 function scrolldown() {
   $('html, body').animate({ scrollTop: $('section.mediaContainer').offset().top }, 'slow');
   return false;
 };
-
-/*
-const cursor = document.querySelector('.cursor');
-console.log(cursor);
-
-document.addEventListener('mousemove', e => {
-  cursor.setAttribute("style", "top: "+e.pageY+"px; left: "+e.pageX+"px;");
-  console.log(e);
-})
-*/
 
 function mailto(URL) {
   setTimeout(function () { window.location = URL }, 500);
@@ -86,29 +78,6 @@ var tryme = document.getElementById("tryme");
 tryme.onclick = function () {
   $(tryme).addClass("tryme-on");
 };
-
-/*
-function mediaPost() {
-  var animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
-  var mediaPost = document.getElementById("mediaPost");
-  var mediaPostLogo = document.getElementById("mediaPostLogo");
-  var mediaPostBtn1 = document.getElementById("mediaPostBtn1");
-  var mediaPostBtn2 = document.getElementById("mediaPostBtn2");
-
-  $(mediaPost).addClass("mediaPost-on");
-  $(mediaPostBtn1).addClass("mediaPostBtn1-on");
-  $(mediaPostBtn1).addClass("mediaPostBtn1-on");
-  $(mediaPostBtn2).addClass("mediaPostBtn2-on");
-  $(mediaPostLogo).addClass("mediaPostLogo-on");
-
-  $(mediaPostLogo).one(animationEvent, function(event) {
-    $(mediaPost).removeClass('mediaPost-on');
-    $(mediaPostBtn1).removeClass('mediaPostBtn1-on');
-    $(mediaPostBtn2).removeClass('mediaPostBtn2-on');
-    $(mediaPostLogo).removeClass('mediaPostLogo-on');
-  });
-};
-*/
 
 //Google analytics event tracking
 //ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);
