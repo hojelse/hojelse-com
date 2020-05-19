@@ -109,15 +109,3 @@ class MediaPost {
     this.#description = description
   }
 }
-
-let mediaCols = document.querySelector(".mediaCol")
-function mediaPostsSetup() {
-  let mediaPosts = [
-    new MediaPost("Air Mail", "CODEPEN", "images/Air Mail.png", "https://codepen.io/hojelse/full/rXvGOq", "Hey bud, wanna throw me a message? Message form animation using SVG with pure js")
-  ]
-  
-  for (let m in mediaPosts){
-    console.log(mediaCols[0].innerHTML)
-  }
-}
-mediaPostsSetup()
