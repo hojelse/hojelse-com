@@ -110,21 +110,6 @@ function mediaPost() {
 };
 */
 
-//Google analytics event tracking
-//ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);
-function gaEventTracking(eventLabel) {
-  ga('send', 'event', 'Outbound links', 'IG post click', eventLabel);
-}
-
-function handleOutboundLinkClicks(eventLabel) {
-  ga('send', 'event', {
-    eventCategory: 'Outbound Link',
-    eventAction: 'click',
-    eventLabel: eventLabel,
-    transport: 'beacon'
-  });
-}
-
 class MediaPost {
   #title
   #platform
