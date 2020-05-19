@@ -124,3 +124,31 @@ function handleOutboundLinkClicks(eventLabel) {
     transport: 'beacon'
   });
 }
+
+class MediaPost {
+  #title
+  #platform
+  #imagePath
+  #linkPath
+  #description
+
+  constructor(title, platform, imagePath, linkPath, description){
+    this.#title = title
+    this.#platform = platform
+    this.#imagePath = imagePath
+    this.#linkPath = linkPath
+    this.#description = description
+  }
+}
+
+let mediaCols = document.querySelector(".mediaCol")
+function mediaPostsSetup() {
+  let mediaPosts = [
+    new MediaPost("Air Mail", "CODEPEN", "images/Air Mail.png", "https://codepen.io/hojelse/full/rXvGOq", "Hey bud, wanna throw me a message? Message form animation using SVG with pure js")
+  ]
+  
+  for (let m in mediaPosts){
+    console.log(mediaCols[0].innerHTML)
+  }
+}
+mediaPostsSetup()
