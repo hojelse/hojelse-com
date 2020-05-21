@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+.wrapper {
+  width: 90vw;
+  max-width: 900px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  padding-top: 10vh;
+  padding-bottom: 50vh;
+}
+
+.header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.maple-icon {
+  height: 120px;
+}
+
+h1 {
+  color: #666;
+  display: inline-block;
+}
+
+button {
+  background-color: #666;
+  display: inline-block;
+  border-radius: 40px;
+  font-size: 10pt;
+  border: none;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  padding: 0px 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #4d4d4d;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 40px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  min-height: 40px;
+  background-color: #f3f3f3;
+}
+
+.list:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.list p {
+  display: inline-block;
+  margin-left: 20px;
+  color: #666;
+  font-weight: bold;
+}
+
+p:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #666;
+  font-size: smaller;
+}
+
+a {
+  height: 100%;
+  min-width: 50px;
+  cursor: pointer;
+}
+
+.block-formula {
+  background-color: #fafafa;
+  padding: 20px 40px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.formula {
+  width: 100%;
+  padding: 5px 0;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.formula-text {
+  margin-bottom: 0.5rem;
+}
+
+.formula-text > img {
+  mix-blend-mode: multiply;
+}
+
+.block-maple {
+  background-color: #f4f4ff;
+  padding: 20px 40px;
+  padding-bottom: 20px;
+}
+
+.input {
+  color: #000;
+  overflow: auto;
+  padding: 5px 0;
+}
+
+.output {
+  color: #00f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+  padding: 5px 0;
+}
+
+.output > img {
+  mix-blend-mode: multiply;
+}
+
+.mathml {
+  margin-top: 150px;
+}
+
+.block-maple p {
+  color: #666;
+  font-weight: bold;
+}
+
+.block-formula p {
+  color: #666;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 100px;
+}
+
+.sectionTitle > h2 {
+  margin: 0;
+  color: #666;
+}
+
+.sectionTitle > svg {
+  fill: #aaa;
+}
+
+.sectionTitle {
+  margin-bottom: 40px;
+  padding: 10px 0px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: solid rgba(0, 0, 0, 0);
+}
+
+.sectionTitle:hover {
+  cursor: pointer;
+}
+
+.sectionTitle svg {
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.blocks {
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 80px;
+}
+
+.sectionTitleClosed {
+  margin-bottom: 0px;
+  border-bottom: solid rgba(0, 0, 0, 0.05);
+}
+
+.blocksClosed {
+  display: none;
+  margin: 0;
+}
+
+.triangleClosed {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.formula-img {
+  mix-blend-mode: multiply;
+  max-width: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 95vw;
+  }
+}
+/*# sourceMappingURL=maple.css.map */
