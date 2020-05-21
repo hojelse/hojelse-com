@@ -249,7 +249,8 @@ h2 {
   display: inline-block;
   width: 100%;
   text-align: center;
-  font-size: 35px;
+  height: 35px;
+  fill: #AAA;
   color: #AAA;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -267,6 +268,7 @@ h2 {
 
 .mediaTitle:hover .mediaLogo, .mediaTitle:hover .mediaLink {
   color: #777777;
+  fill: #777777;
 }
 
 .mediaCTA {
@@ -339,8 +341,8 @@ h2 {
 }
 
 .mediaPostWrapLogo {
-  color: #777777;
-  font-size: 20px;
+  fill: #777777;
+  height: 20px;
   margin: 0px 20px;
 }
 
@@ -459,6 +461,7 @@ h3 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  fill: #AAA;
   color: #AAA;
   font-size: 25px;
   -webkit-transition: 0.1s;
@@ -466,6 +469,7 @@ h3 {
 }
 
 .someIcon:hover {
+  fill: #777777;
   color: #777777;
 }
 
@@ -926,6 +930,12 @@ a {
   .footerTryme {
     right: 0;
     top: -10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .mediaPost {
+    min-width: 60%;
   }
 }
 /*# sourceMappingURL=index.css.map */
