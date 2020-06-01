@@ -94,3 +94,32 @@ class MediaPost {
     this.#description = description
   }
 }
+
+let mediaPosts = document.querySelectorAll('div.mediaPost')
+mediaPosts.forEach(mediaPost => {
+  mediaPost.addEventListener('click', handleClick)
+});
+
+function handleClick(){
+  fullScreen(this)
+}
+
+function fullScreen(clickedMediaPost) {
+  let bodyRect = document.body.getBoundingClientRect()
+  let clickedMediaPostRect = clickedMediaPost.getBoundingClientRect()
+  let offsetTop = clickedMediaPostRect.top - bodyRect.top;
+  let offsetLeft = clickedMediaPostRect.left - bodyRect.left;
+
+  let fullScreenPost = document.createElement('div')
+
+  console.log(offsetTop,offsetLeft);
+  fullScreenPost.style.top = offsetTop + "px"
+  fullScreenPost.style.left = offsetLeft + "px"
+  fullScreenPost.style.height = clickedMediaPostRect.height + "px"
+  fullScreenPost.style.width = clickedMediaPostRect.width + "px"
+  
+  fullScreenPost.classList.add('fullScreenPost')
+
+  document.body.appendChild(fullScreenPost)
+
+}

@@ -301,6 +301,16 @@ h2 {
   transition: 0.2s ease-in;
 }
 
+.fullScreenPost {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px 0px #ddd;
+          box-shadow: 4px 4px 10px 0px #ddd;
+  -webkit-transition: 2s background-color ease-in;
+  transition: 2s background-color ease-in;
+}
+
 .mediaCol:nth-child(2) .mediaPost {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
