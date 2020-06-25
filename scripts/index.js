@@ -20,6 +20,7 @@ var animateHTML = function () {
     windowHeight = window.innerHeight
     addEventHandlers()
     checkPosition()
+    fadeinElementsIfIOS()
   }
   function addEventHandlers() {
     window.addEventListener("scroll", checkPosition)
@@ -29,6 +30,17 @@ var animateHTML = function () {
     for (var i = 0; i < elems.length; i++) {
       var positionFromTop = elems[i].getBoundingClientRect().top
       if (positionFromTop - windowHeight <= 0) {
+        elems[i].className = elems[i].className.replace(
+          "hidden",
+          "fade-in-element"
+        )
+      }
+    }
+  }
+  function fadeinElementsIfIOS() {
+    let iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (iOS) {
+      for (var i = 0; i < elems.length; i++) {
         elems[i].className = elems[i].className.replace(
           "hidden",
           "fade-in-element"
